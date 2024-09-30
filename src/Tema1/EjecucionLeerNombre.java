@@ -12,9 +12,6 @@ public class EjecucionLeerNombre {
         try {
             exitVal = p.waitFor();
             System.out.println("Valor de salida: " + exitVal);
-//            if (exitVal == 0) {
-//                System.out.println(Arrays.toString());
-//            }
 
         } catch (InterruptedException e) {
             e.printStackTrace();
