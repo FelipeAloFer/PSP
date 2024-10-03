@@ -4,9 +4,11 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class Ejercicio1_4 {
+public class Ejercicio1_5 {
     public static void main(String[] args) throws IOException {
-        File directorio = new File("/bin");
+        File directorio = new File("/archivoQueNoExiste");
+        //AL PROBAR CON UN PROGRAMA QUE NO EXISTE SALTARÁ LA IOEXCEPTION
+        //EL PROGRAMA PARARA LA EJECUCIÓN CUANDO LLEGUE A LA LINEA "Process p = pb.start();
 
         ProcessBuilder pb = new ProcessBuilder("/home/usuario/.jdks/openjdk-23-1/bin/java", "Ejemplo2");
 
